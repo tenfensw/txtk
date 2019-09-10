@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project id="6b01ae1d-b384-474c-bd3b-dd3a439f1aee" kpf_version="5" name="TXTk.komodoproject">
+<file id="c64ef803-1f96-6f47-ba61-c631d3e966c8" idref="6b01ae1d-b384-474c-bd3b-dd3a439f1aee" name="LICENSE" url="LICENSE">
+</file>
+<file id="c6f7609e-17e3-d445-9107-276141bd9712" idref="6b01ae1d-b384-474c-bd3b-dd3a439f1aee" name="txtk.tcl" url="txtk.tcl">
+</file>
+<file id="f118a771-9281-b241-a155-2b9c81971737" idref="6b01ae1d-b384-474c-bd3b-dd3a439f1aee" name="README.md" url="README.md">
+</file>
+<file id="fe72e486-0315-894a-9326-02b570c6d1b4" idref="6b01ae1d-b384-474c-bd3b-dd3a439f1aee" name="improved_port.tcl" url="improved_port.tcl">
+</file>
+<preference-set idref="6b01ae1d-b384-474c-bd3b-dd3a439f1aee" id="project" preftype="project">
+</preference-set>
+</project>

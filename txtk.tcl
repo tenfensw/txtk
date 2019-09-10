@@ -12,6 +12,7 @@ set txVersionInfo "TXTk 2.00 for Tcl"
 set txAllowUpdates 1
 set txGlobalPen {65535 65535 65535 1}
 set txFillPen {65535 65535 65535 1}
+set txConsoleColor default
 font create .txFont -size 12 -family Helvetica
 
 proc txCreateWindow {sizeX sizeY} {
@@ -292,3 +293,34 @@ proc txCatchMouse {{shouldEat 1}} {
         txMessageBox "You're not a cat and I would not recommend you to touch a dirty rat that had just ran out from your local dumpster with your hands." "TXTk cares about your health"
     }
 }
+
+proc txSetConsoleColor {{fg default}} {
+    # not the best solution so far, but it is acceptable
+    set realColor "\033\[0m"
+    global txConsoleColor
+    set txConsoleColor $fg
+    if {$fg == "red"} {
+        set realColor "\033\[1;31m"
+    } elseif {$fg == "green"} {
+        set realColor "\033\[1;32m"
+    } elseif {$fg == "yellow"} {
+        set realColor "\033\[1;33m"
+    } elseif {$fg == "blue"} {
+        set realColor "\033\[1;34m"
+    } elseif {$fg == "magenta"} {
+        set realColor "\033\[1;35m"
+    } elseif {$fg == "cyan"} {
+        set realColor "\033\[1;36m"
+    } elseif {$fg == "gray" || $fg == "grey"} {
+        set realColor "\033\[1;90m"
+    } elseif {$fg == "white"} {
+        set realColor "\033\[1;97m"
+    }
+    puts -nonewline $realColor
+}
+
+proc txGetConsoleColor {} {
+    global txConsoleColor
+    return $txConsoleColor
+}
+

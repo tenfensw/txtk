@@ -5,10 +5,11 @@
 - Drawing circles, lines, ovals, etc
 - Drawing text
 - Message boxes
+- CLI colors
 
 ## What doesn't work?
 - In-memory canvases
-- CLI colors
+- txDrawText and other hardcore text-related
 - Some other stuff
 
 ## Example

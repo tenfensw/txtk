@@ -73,7 +73,7 @@ proc RGB {r g b} {
 
 proc _txSetColor {clr thickness} {
     if {$clr == 0} {
-        set clr [list 255 255 0]
+        set clr [list 255 255 255]
     }
     set finalList [list [lindex $clr 0] [lindex $clr 1] [lindex $clr 2] $thickness]
     return $finalList

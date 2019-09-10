@@ -16,6 +16,5 @@
 See the ``examples`` folder for more info.
 
 ## Docs
-Coming soon...
-
+See https://github.com/timkoi/txtk/wiki/API-reference for more info.
 
